@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style> /* style choices, css */
+    header{ /* header style: Green background, title in center*/
+        background-color: #4D825A;
+        text-align: center;
+        margin: 0;
+        padding: 15px 30px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+
+        
+        
+        
+    }
+    header .logo{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+
+    .login{ /* login box design, light green w/ centered text*/
+        background-color: rgb(195, 220, 198);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0,1);
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+    }
+</style>
+
+<header>
+    <div class="logo">FocusMate</div>
+</header>
+
+<body>
+  <div class="login"> 
+    <h2>Account Login</h2>
+    <p id="error-message" class="error-text"></p>
+
+    <form id="login-form">
+        <div class="input"> <!--Username box for login input-->
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+        </div>
+
+        <div class="input"> <!--Password box for login input-->
+            <label for="password">Password:</label>
+            <input type="text" id="password" placeholder="Enter password" required>
+        </div>
+
+        <button type="submit">Log In</button>
+        <a href="signup.html">Create an Account</a>
+    </form>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            //test login credintals until backend is further developed
+            if (user === 'admin' && pass === 'pass123'){
+                window.location.href = 'dashboard.html';
+            } else{
+                alert('Invalid Login. Please try again.');
+            }
+        });
+    </script>
+  </div>
+</body>
+</html>
