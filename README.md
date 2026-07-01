@@ -4,6 +4,7 @@
 - Tilak Bahadur Deuja
 - Rijan Bhattrai
 - Aryiel Simon
+- Cade Sears
 
 ## Project Overview
 Focus Mate is a productivity and study planning application designed to help students stay organized, manage tasks, plan study sessions, and improve focus.
