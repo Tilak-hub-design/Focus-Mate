@@ -1,0 +1,36 @@
+.dashboard{
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.nav-bar{
+    background-color: #4CAF50;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+}
+
+.nav-title{
+    font-size: 26px;
+}
+
+.links{
+    display:flex;
+    flex: 0.75;
+    list-style: none; /* to remove bullet points */
+    gap:30px;
+    justify-content: space-between;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.links a:hover{ /* individual underlining for links */
+    text-decoration: underline;
+}
+
