@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Test Website"
+		},
+		{
+			"name": "Focus-Mate",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Test Website"
+	}
+}
