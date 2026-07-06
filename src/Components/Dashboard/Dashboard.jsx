@@ -19,6 +19,14 @@ function Dashboard(){
         <div className="dashboard-content"> {/* placeholder until dashboard further developed */}
             <h1>Welcome to FocusMate</h1>
             <p>Work in Progress..</p>
+                    <div className="task-box">
+                <h2>Tasks</h2>
+                <ul className="task-list">
+                    <li>Task 1</li> {/* placeholder tasks until backend */}
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                </ul>
+            </div>
         </div>
     </div>
     );

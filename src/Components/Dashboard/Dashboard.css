@@ -34,3 +34,30 @@
     text-decoration: underline;
 }
 
+.task-box{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.task-box h2{
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.task-list{
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
+}
