@@ -23,3 +23,5 @@ Focus Mate is a productivity and study planning application designed to help stu
 - SRS document in progress
 - UI sketches in progress
 - GitHub repository initialized
+
+To run: Repository in VSCode and type "npm start" in terminal 
