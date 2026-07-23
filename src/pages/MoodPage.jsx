@@ -56,6 +56,16 @@ export default function MoodPage({ user, go }) {
     return { key, date: d, latest };
   });
 
+  function deleteMood(index){
+    const raw = loadUsersRaw();
+
+    if(!raw[user] || !raw[user].moodshistory) return;
+    //delete selected mood entry
+    raw[user].moodsHistory.splice(index, 1);
+    saveUsers(raw);//save update
+    setUsers(loadUsers());
+  }
+
   return (
     <div style={{ display: "grid", gridTemplateColumns: "1fr 260px", gap: 16, alignItems: "start" }}>
       <div>

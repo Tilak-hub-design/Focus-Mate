@@ -21,7 +21,7 @@ export default function Login({ onLogin, goRegister }) {
 
   return (
     <div className="card auth-card" style={{ maxWidth: 480, margin: "28px auto" }}>
-      <h2 style={{ marginTop: 0 }}>Login</h2>
+      <h2 style={{marginTop: 0, textAlign: "center", fontSize: "30px" }}>Login</h2>
       <form onSubmit={submit}>
         <label htmlFor="login-username">Username</label>
         <input
